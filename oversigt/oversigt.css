@@ -34,54 +34,29 @@
   color: #55ec20;
 }
 
-#left-side {
+#middle {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-#left-side h2 {
+#middle h2 {
   color: white;
   margin-top: 65px;
 }
-#ring-1 {
-  width: 200px;
-  height: 200px;
-  background: #201e1e;
-  border-radius: 110px;
-  border: 1px dashed rgb(56, 255, 82);
-  position: absolute;
-  top: 197px;
-  z-index: 1;
-}
-#ring-2 {
-  width: 220px;
-  height: 220px;
-  background: #201e1e;
-  border-radius: 110px;
-  border: 1px solid rgb(77, 78, 77);
-  position: absolute;
-  top: 187px;
-  z-index: 0;
-}
-#live-feed-el {
-  margin-top: 70px;
-  height: 170px;
-  width: 170px;
-  border-radius: 100px;
-  box-sizing: border-box;
-  background: #201e1e;
-  border: 1px dashed rgb(56, 255, 82);
-  color: #55ec20;
+#min-max {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
-  z-index: 2;
+  gap: 50px;
+  margin-top: 50px;
 }
-#live-clock {
-  color: #55ec20;
-  margin-top: 40px;
+.ring {
+  width: 96px;
+  height: 96px;
+  background: #201e1e;
+  border-radius: 110px;
+  border: 1px dashed rgb(56, 255, 82);
 }
 footer {
   justify-content: center;
@@ -95,5 +70,31 @@ footer p {
   background-color: #201e1e;
 }
 .link {
+  color: #55ec20;
+}
+
+.slider-container {
+  text-align: center;
+}
+
+.live-feed-el {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.per-hour {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  background-color: #000;
+}
+
+.El-this-time {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
   color: #55ec20;
 }
