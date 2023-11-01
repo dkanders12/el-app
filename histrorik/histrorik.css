@@ -4,7 +4,12 @@
   box-sizing: border-box;
   background-color: #27282b;
 }
-
+#right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 #one {
   background-color: #201e1e;
   padding-left: 20px;
@@ -38,60 +43,11 @@
   top: 70px;
   right: 30px;
 }
-
-#middle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#middle h2 {
+#right-side h2 {
   color: white;
   margin-top: 65px;
 }
-#min-max {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  margin-top: 50px;
-}
-.ring {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #55ec20;
-  width: 96px;
-  height: 96px;
-  background: #201e1e;
-  border-radius: 110px;
-  border: 1px dashed rgb(56, 255, 82);
-  font-size: 13px;
-}
-#underTekst {
-  display: flex;
-  gap: 80px;
-  align-items: center;
-  width: 240px;
-  margin-top: 20px;
-  color: white;
-}
-footer {
-  justify-content: center;
-  height: 50px;
-  align-items: center;
-  margin-top: 63px;
-}
-footer p {
-  color: white;
-  padding: 22px;
-  background-color: #201e1e;
-}
-.link {
-  color: #55ec20;
-}
-
-#per-hour {
+#per-date {
   display: flex;
 
   flex-direction: column;
@@ -100,7 +56,7 @@ footer p {
   margin-top: 40px; /* Tilføjet rullebjælke ved behov */
 }
 
-.El-this-time {
+.new-date {
   width: 300px;
   padding: 7px 13px 7px 13px;
   display: flex;
@@ -113,16 +69,41 @@ footer p {
   position: relative;
   margin: 5px;
 }
-
-.El-this-time p {
+#pick {
+  border-radius: 8px;
+  background: #201e1e;
+  width: 300px;
+  height: 36px;
+  box-shadow: 0px 0px 8px 2px rgba(91, 91, 91, 0.25);
+  border: none;
+  color: white;
+  font-size: 17px;
+  padding: 7px 7px 7px 7px;
+  margin-top: 20px;
+}
+.new-date p {
   color: #55ec20;
 }
 
-.El-this-time h4 {
+.new-date h4 {
   color: white;
   font-size: 15px;
 }
 
+footer {
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  margin-top: 190px;
+}
+footer p {
+  color: white;
+  padding: 22px;
+  background-color: #201e1e;
+}
+.link {
+  color: #55ec20;
+}
 #live-clock {
   display: none;
 }

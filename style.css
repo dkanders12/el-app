@@ -33,6 +33,11 @@
 .btn:hover {
   color: #55ec20;
 }
+#top-right {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+}
 
 #left-side {
   display: flex;
@@ -87,7 +92,7 @@ footer {
   justify-content: center;
   height: 50px;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 290px;
 }
 footer p {
   color: white;
