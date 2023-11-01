@@ -44,7 +44,7 @@ export function updateElpris() {
     const matchingPrice = elpriser[currentHour]; // Brug currentHour til at få det matchende prisobjekt
 
     if (matchingPrice) {
-      liveFeedEl.textContent = `${matchingPrice.DKK_per_kWh}DKK   `;
+      liveFeedEl.textContent = `${matchingPrice.DKK_per_kWh} KR. per: KWH  `;
     } else {
       liveFeedEl.textContent =
         "Kunne ikke hente elprisdata for den aktuelle time.";

@@ -37,6 +37,7 @@
   position: absolute;
   top: 70px;
   right: 30px;
+  cursor: pointer;
 }
 
 #left-side {
@@ -81,7 +82,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 20px;
+  text-align: center;
   z-index: 2;
 }
 #live-clock {

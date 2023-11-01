@@ -60,13 +60,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: #55ec20;
   width: 96px;
   height: 96px;
   background: #201e1e;
   border-radius: 110px;
   border: 1px dashed rgb(56, 255, 82);
-  font-size: 13px;
+  font-size: 11px;
 }
 #underTekst {
   display: flex;

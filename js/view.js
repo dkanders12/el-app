@@ -7,7 +7,7 @@ getAddressByCity().then((ElPriser) => {
 
     containers.forEach((container, index) => {
       const pTag = document.createElement("p");
-      pTag.textContent = `${prices[index]} DKK`;
+      pTag.textContent = `${prices[index]} DKK `;
       container.appendChild(pTag);
     });
     beregnMinMax(prices);
@@ -24,8 +24,8 @@ function beregnMinMax(beloebListe) {
     const minimum = Math.min(...beloebListe);
     const maksimum = Math.max(...beloebListe);
 
-    minRing.textContent = ` ${minimum} DKK`;
-    maxRing.textContent = ` ${maksimum} DKK`;
+    minRing.textContent = ` ${minimum} KR. per: KWH`;
+    maxRing.textContent = ` ${maksimum} KR. per: KWH`;
   } else {
     minRing.textContent = "Ingen beløb tilgængelige.";
     maxRing.textContent = "Ingen beløb tilgængelige.";
