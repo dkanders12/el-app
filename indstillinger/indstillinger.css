@@ -1,0 +1,146 @@
+#indstillinger {
+  background-color: #27282b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #27282b;
+  text-decoration: none;
+}
+
+#one {
+  background-color: #201e1e;
+  padding-left: 20px;
+}
+#top-header {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #201e1e;
+}
+#top-header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+  background-color: #201e1e;
+  justify-content: end;
+  width: 100%;
+  padding-right: 40px;
+}
+.btn {
+  color: white;
+  text-decoration: none;
+  background-color: #201e1e;
+}
+h2 {
+  color: white;
+  margin-top: 70px;
+}
+
+footer {
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  margin-top: 315px;
+}
+footer p {
+  color: white;
+  padding: 22px;
+  background-color: #201e1e;
+}
+.link {
+  color: #55ec20;
+}
+
+#push-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 30px;
+  margin-top: 100px;
+}
+.region-hover {
+  color: white;
+}
+.region-hover:hover {
+  color: #55ec20;
+}
+#region {
+  display: flex;
+  width: 170px;
+  gap: 30px;
+}
+body.dark-mode {
+  background: #111;
+  color: #fff;
+  /* Tilføj andre stilarter for mørk tilstand her */
+  transition: background 2.5s, color 2.5s; /* Langsom overgang tilbage til lys tilstand */
+}
+
+.transition {
+  transition: opacity 0.5s ease-in-out;
+}
+
+#top-push {
+  position: relative;
+  right: 0.5em;
+  top: 0.8em;
+  display: flex;
+  gap: 10px;
+}
+#buttom-push {
+  display: flex;
+  position: relative;
+  right: 0.5em;
+  top: 0.8em;
+  gap: 10px;
+}
+
+/* Stilarter for skifterindgangen */
+.toggle-input {
+  display: none;
+}
+
+/* Stilarter for skifteretiketten (slider) */
+.toggle-label {
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+  background-color: #201e1e;
+  border-radius: 15px;
+  transition: transform 0.4s;
+  transform-origin: center;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Stil for skifteretiketten (slider), når den er aktiv */
+.toggle-input:checked + .toggle-label:before {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #55ec20;
+  border-radius: 50%;
+  transition: transform 0.4s, background-color 0.4s;
+  transform: translateX(1.5rem);
+}
+
+/* Stil for inaktiv cirkel */
+.toggle-label:before {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #55ec20;
+  border-radius: 50%;
+  transition: transform 0.4s, background-color 0.4s;
+}

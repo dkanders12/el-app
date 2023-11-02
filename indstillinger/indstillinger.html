@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="indstillinger.css" />
     <title>Try me</title>
     <script type="module" src="./js/view.js" defer></script>
     <script
@@ -11,5 +11,40 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body></body>
+  <body>
+    <section id="indstillinger">
+      <header id="top-header">
+        <img id="one" src="/assets/Group 10.png" alt="" />
+        <ul>
+          <li><a class="btn" href="/oversigt/oversigt.html">Oversigt</a></li>
+          <li><a class="btn" href="/index.html">Lige nu</a></li>
+          <li>
+            <a class="btn" href="/histrorik/histrorik.html">Historik</a>
+          </li>
+        </ul>
+      </header>
+
+      <h2>indstillinger</h2>
+      <section id="push-option">
+        <div id="top-push"> <p>priser inkl. moms</p>   <label class="toggle-container">
+          <input type="checkbox" class="toggle-input" id="toggleSwitch">
+          <span class="toggle-label"></span></div>
+        <div id="buttom-push"> <p>laveste pris alarm</p><label class="toggle-container">
+          <input type="checkbox" class="toggle-input" id="toggleSwitch">
+          <span class="toggle-label"></span></div>
+        <div id="region"><p>vælg Region</p>
+        <div><a class="region-hover" href="">vælg region</a>
+          <a class="region-hover" href="">Øst Danmark</a>
+            <a class="region-hover" href="">Vest Danmark</a></div>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          Priserne er <a class="link" href="">ex. moms</a> og afgifter Du vises
+          lige nu priserne for <a class="link" href="">Øst Danmark</a>
+        </p>
+      </footer>
+    </section>
+  </body>
 </html>
