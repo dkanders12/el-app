@@ -7,8 +7,11 @@
 #desktop {
   display: flex;
   justify-content: space-between;
+  margin-right: 70px;
+  position: relative;
 }
-#top-right {
+
+#top-right-main {
   display: none;
 }
 #live-clock {
@@ -23,7 +26,12 @@
 }
 #left-side h2 {
   color: white;
-  margin-top: 65px;
+}
+.slet {
+  margin-left: 100px;
+  margin-top: 40px;
+  font-size: 30px;
+  color: white;
 }
 #ring-1 {
   width: 200px;
@@ -32,7 +40,7 @@
   border-radius: 110px;
   border: 1px dashed rgb(56, 255, 82);
   position: absolute;
-  top: 197px;
+  top: 147px;
   z-index: 1;
 }
 #ring-2 {
@@ -42,11 +50,11 @@
   border-radius: 110px;
   border: 1px solid rgb(77, 78, 77);
   position: absolute;
-  top: 187px;
+  top: 137px;
   z-index: 0;
 }
 #live-feed-el {
-  margin-top: 70px;
+  margin-top: 67px;
   height: 170px;
   width: 170px;
   border-radius: 100px;
@@ -72,12 +80,58 @@
   align-items: center;
   background-color: #201e1e;
 }
+#right-side h2 {
+  color: white;
+  margin-top: 65px;
+}
+#per-date {
+  display: flex;
+
+  flex-direction: column;
+  height: 423px; /* Tilføjet fast højde */
+  overflow-y: auto;
+  margin-top: 40px; /* Tilføjet rullebjælke ved behov */
+}
+
+.new-date {
+  width: 300px;
+  padding: 7px 13px 7px 13px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  background: #201e1e;
+
+  box-shadow: 0px 0px 8px 2px rgba(91, 91, 91, 0.25);
+
+  position: relative;
+  margin: 5px;
+}
+#pick {
+  border-radius: 8px;
+  background: #201e1e;
+  width: 300px;
+  height: 36px;
+  box-shadow: 0px 0px 8px 2px rgba(91, 91, 91, 0.25);
+  border: none;
+  color: white;
+  font-size: 17px;
+  padding: 7px 7px 7px 7px;
+  margin-top: 70px;
+}
+.new-date p {
+  color: #55ec20;
+}
+
+.new-date h4 {
+  color: white;
+  font-size: 15px;
+}
 
 footer {
   justify-content: center;
   height: 50px;
   align-items: center;
-  margin-top: 290px;
+  margin-top: 80px;
   width: 100%;
 }
 footer p {
@@ -162,8 +216,26 @@ footer p {
   font-size: 15px;
 }
 @media (max-width: 767px) {
+  #live-feed-el {
+    position: absolute;
+    top: 95px;
+  }
   #left-side h2 {
-    margin-top: -115px;
+    margin-top: -400px;
+  }
+  #live-clock {
+    position: absolute;
+    top: 350px;
+  }
+  .slet {
+    display: none;
+  }
+  #priser-top {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+
+    color: white;
   }
   #desktop {
     display: flex;
@@ -187,10 +259,10 @@ footer p {
     width: 100%;
     padding-right: 40px;
   }
-  #top-right {
+  #top-right-main {
     display: block;
     position: absolute;
-    top: 70px;
+    top: 20px;
     right: 30px;
     cursor: pointer;
   }
@@ -212,5 +284,11 @@ footer p {
   }
   footer {
     margin-top: 110px;
+  }
+  #per-date {
+    display: none;
+  }
+  #pick {
+    display: none;
   }
 }
