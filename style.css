@@ -220,6 +220,9 @@ footer p {
     position: absolute;
     top: 95px;
   }
+  #left-side {
+    margin-left: 60px;
+  }
   #left-side h2 {
     margin-top: -400px;
   }
@@ -263,7 +266,7 @@ footer p {
     display: block;
     position: absolute;
     top: 20px;
-    right: 30px;
+    right: -40px;
     cursor: pointer;
   }
   .El-this-time {

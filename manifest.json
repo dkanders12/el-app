@@ -1,0 +1,10 @@
+{
+  "name": "PWA CookBook",
+  "short_name": "PWACookBook",
+  "start_url": "./index.html",
+  "id": "./index.html",
+  "display": "standalone",
+  "background_color": "#27282b",
+  "theme_color": "#55ec20",
+  "orientation": "portrait-primary"
+}
